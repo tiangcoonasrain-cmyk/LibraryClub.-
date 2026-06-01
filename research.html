@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Section</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+padding:40px;
+background:#f6f1e9;
+}
+
+.section{
+display:none;
+}
+
+a{
+display:inline-block;
+margin-top:30px;
+text-decoration:none;
+font-weight:bold;
+color:#2d3b2f;
+}
+</style>
+</head>
+
+<body>
+
+<div id="plan" class="section">
+<h1>Research Plan</h1>
+<ul>
+<li>Add Research Here</li>
+<li>Add Research Here</li>
+</ul>
+</div>
+
+<div id="methodology" class="section">
+<h1>Research Methodology</h1>
+<ul>
+<li>Add Research Here</li>
+<li>Add Research Here</li>
+</ul>
+</div>
+
+<div id="completed" class="section">
+<h1>Completed Research</h1>
+<ul>
+<li>Add Research Here</li>
+<li>Add Research Here</li>
+</ul>
+</div>
+
+<a href="index.html">← Back to Home</a>
+
+<script>
+const type = new URLSearchParams(window.location.search).get("type");
+
+if(type === "plan"){
+document.getElementById("plan").style.display = "block";
+}
+
+if(type === "methodology"){
+document.getElementById("methodology").style.display = "block";
+}
+
+if(type === "completed"){
+document.getElementById("completed").style.display = "block";
+}
+</script>
+
+</body>
+</html>
